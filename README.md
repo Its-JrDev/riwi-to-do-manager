@@ -95,5 +95,8 @@ The system ensures:
 ## 👥 Collaborators
 
 * @Its-JrDev
-* @teammate-1
-* @teammate-2
+* @AndrxsGutierrez
+* @emmanuelarchi30-alt
+* @Jgonzalez-2005
+* @jhonata0200p
+* @JoshuaQ-rJ

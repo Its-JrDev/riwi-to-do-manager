@@ -98,8 +98,8 @@ def delete_task():
         return
 
     delete_task_title = input('\nEnter the name of the task to delete: ').strip()
-    ej = validate_int(f"Are you sure you want to delete '{delete_task_title}'? 1. (YES) 2. (NO): ", min_value=1, max_value=2)
-    if ej == 2:
+    request_confirm = validate_int(f"Are you sure you want to delete '{delete_task_title}'? 1. (YES) 2. (NO): ", min_value=1, max_value=2)
+    if request_confirm == 2:
         print("\nDeletion cancelled.\n")
         return
     
