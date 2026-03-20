@@ -1,3 +1,6 @@
+from services import create_task, show_tasks, update_task, delete_task
+from validations import validate_int
+
 def menu():
     while True:    
         print('** To Do Manager - Pro-Edition **')
@@ -7,23 +10,17 @@ def menu():
         print('4. Delete task')
         print('5. Exit')
 
-        option = int(input('\nSelect an option (1-5): '))
+        option = validate_int('\nSelect an option (1-5): ', min_value=1, max_value=5)
 
         match option:
             case 1:
-                from services import add_task
-                add_task()
+                create_task()
             case 2:
-                from services import view_tasks
-                view_tasks()
+                show_tasks()
             case 3:
-                #Waiting for the implementation of the update_task function
-                pass
+                update_task()
             case 4:
-                #Waiting for the implementation of the delete_task function
-                pass
+                delete_task()
             case 5:
                 print('\nExiting the program.')
                 break
-            case _:
-                print('\nInvalid option. Please select a number between 1 and 5.')

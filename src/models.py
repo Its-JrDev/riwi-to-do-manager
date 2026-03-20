@@ -1,7 +1,7 @@
 def create_task_model(title, description, priority):
     return {
-        "tittle": title,
+        "title": title,
         "description": description,
         "priority": priority,
-        "status": "to do"
+        "status": "pending"
         }
